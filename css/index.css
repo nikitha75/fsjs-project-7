@@ -2,13 +2,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 nav {
     display: flex;
     margin-top: 0px;
     margin-left: 50px;
-
 }
 
 .nav-items {
@@ -22,23 +19,20 @@ nav {
     cursor: pointer;
 }
 
-
-
 nav > img:nth-child(1) {
     width: 100px;
 }
 
-
 .left-section {
     margin-left: 50px;
+    height: 490px;
+    width: 570px;
 }
-
 
 .left-section > h3 {
     font-size: 35px;
     font-weight: 200;
 }
-
 
 .left-section > h3 > img {
     width: 40px;
@@ -49,9 +43,7 @@ nav > img:nth-child(1) {
     font-size: 55px;
     font-weight: 100;
     margin-top: -30px;
-    margin-bottom: 0px;
 }
-
 
 .crcl {
     background: #fe5e35;
@@ -65,29 +57,23 @@ nav > img:nth-child(1) {
     cursor: pointer;
 }
 
-
 .plus {
     position: absolute;
     color: #ffffff;
-    /* z-index: 1; */
-    margin-top: -2px; 
-    margin-left: 65px;  
-    font-size: 20px; 
+    margin-top: -2px;
+    margin-left: 65px;
+    font-size: 20px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-
-.sub-headline > img {
+.sub-headline>img {
     float: right;
-
 }
 
 .sub-headlines > h5 {
     font-size: 16px;
 }
-
-
 
 .text {
     float: left;
@@ -96,6 +82,9 @@ nav > img:nth-child(1) {
     color: #adadad;
 }
 
+.action-btns {
+    margin-top: 10px;
+}
 
 .action-btn {
     background-color: #fe5e35;
@@ -107,33 +96,27 @@ nav > img:nth-child(1) {
     cursor: pointer;
 }
 
-
-
-
 .right-section {
     float: right;
-    margin-top: -90px;
+    margin-top: -300px;
+    margin-right: 100px;
+    width: 500px;
+    height: 480px;
 }
 
-
-.headphone-div > img:nth-child(1) {
+.headphone-div>img:nth-child(1) {
     position: relative;
-    margin-top: -500px;
     margin-right: 200px;
     width: 400px;
 }
 
-
-
-.headphone-div > img:nth-child(2) {
+.headphone-div>img:nth-child(2) {
     position: absolute;
-    margin-top: -140px; 
     margin-left: -620px;
-
     width: 100px;
 }
 
-.discount-content > h4 {
+.discount-content>h4 {
     position: absolute;
     color: #ffffff;
     margin-top: -140px;
@@ -141,16 +124,14 @@ nav > img:nth-child(1) {
     font-size: 12px;
 }
 
-.discount-content > h1 {
+.discount-content>h1 {
     position: absolute;
     color: #ffffff;
     margin-top: -130px;
 }
 
-
-
 .dots {
-    display: flex; 
+    display: flex;
     margin-left: 120px;
     margin-top: -20px;
 }
@@ -159,38 +140,222 @@ nav > img:nth-child(1) {
     margin: 15px;
 }
 
-
 .yellow-dot {
     background: #ffec20;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-
 }
-
 
 .tomato-dot {
     background: #fe5e35;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-
 }
-
 
 .black-dot {
     background: #000000;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-
 }
-
 
 .addcart {
     margin-left: 135px;
-    /* cursor: pointer; */
 }
 
 
+
+
+@media screen and (min-width: 360px) {
+    .bars-visible {
+        display: block;
+    }
+
+    .bars-icon {
+        margin-top: 14px;
+    }
+
+    .bars-icon>i {
+        margin-right: 20px;
+    }
+
+    .items-hidden {
+        display: none;
+    }
+
+    .texty {
+        float: left;
+        font-size: 12px;
+    }
+
+    .action-btns {
+        margin-top: 50px;
+    }
+
+    .intro-section {
+        margin-top: 50px;
+        height: 1100px;
+        width:  670px;
+    }
+
+
+
+    .left-section {
+        height: 490px;
+        width: 570px;
+    }
+
+    .right-section {
+        margin-top: 20px;
+        width: 500px;
+        height: 490px;
+    }
+
+    .headphone-div>img:nth-child(1) {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 100px;
+        width: 350px;
+        display: flex;
+    }
+
+    .headphone-div>img:nth-child(2) {
+        position: absolute;
+        margin-top: -160px;
+        margin-left: 80px;
+        width: 100px;
+        display: flex;
+    }
+
+    .discount-content>h4 {
+        margin-top: -140px;
+        margin-left: 100px;
+    }
+    
+    .discount-content>h1 {
+        margin-top: -130px;
+        margin-left: 100px;
+    }
+
+    .dots {
+        display: flex;
+        margin-top: -10px;
+        margin-left: 170px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .bars-visible {
+        display: inline;
+    }
+
+    .bars-icon {
+        margin-top: 35px;
+    }
+
+    .items-hidden {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 976px) {
+    .bars-hidden {
+        display: none;
+    }
+
+    .items-visible {
+        display: flex;
+    }
+
+    .intro-section {
+        width: 1200px;
+        height: 600px;
+    }
+
+    .right-section {
+        float: right;
+        margin-top: -490px;
+        margin-right: 20px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1240px) {
+    .bars-hidden {
+        display: none;
+    }
+
+    .items-visible {
+        display: flex;
+    }
+
+    .texty {
+        float: left;
+        font-size: 12px;
+    }
+
+    .action-btns {
+        margin-top: 50px;
+    }
+
+    .intro-section {
+        margin-top: 0;
+    }
+
+
+    .left-section {
+        height: 490px;
+        width: 570px;
+    }
+
+    .right-section {
+        float: right;
+        margin-top: -490px;
+        margin-right: 20px;
+        width: 500px;
+        height: 490px;
+    }
+
+    .headphone-div>img:nth-child(1) {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 100px;
+        width: 350px;
+        display: flex;
+    }
+
+    .headphone-div>img:nth-child(2) {
+        position: absolute;
+        margin-top: -160px;
+        margin-left: 80px;
+        width: 100px;
+        display: flex;
+    }
+
+    .discount-content>h4 {
+        margin-top: -140px;
+        margin-left: 100px;
+    }
+    
+    .discount-content>h1 {
+        margin-top: -130px;
+        margin-left: 100px;
+    }
+
+    .dots {
+        display: flex;
+        margin-top: -10px;
+        margin-left: 170px;
+    }
+
+}  
 
