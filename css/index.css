@@ -354,8 +354,11 @@ nav > img:nth-child(1) {
     .dots {
         display: flex;
         margin-top: -10px;
-        margin-left: 170px;
+        margin-left: 190px;
     }
-
+    
+    .addcart {
+        margin-left: 210px;
+    }
 }  
 
