@@ -311,7 +311,6 @@ nav > img:nth-child(1) {
         margin-top: 0;
     }
 
-
     .left-section {
         height: 490px;
         width: 570px;
@@ -319,7 +318,8 @@ nav > img:nth-child(1) {
 
     .right-section {
         float: right;
-        margin-top: -490px;
+        /* margin-top: -490px; */
+        margin-top: -550px;
         margin-right: 20px;
         width: 500px;
         height: 490px;
